@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn HTML from zero. Simple lessons, live examples, practice challenges and a quick quiz."
+    />
+    <title>Your first website starts with a tag. — TagLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container navigation">
+        <a class="brand" href="index.html" aria-label="TagLab home"
+          >&lt;/&gt; taglab</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a
+          ><a href="lessons.html">Lessons</a><a href="examples.html">Examples</a
+          ><a href="practice.html">Practice</a><a href="quiz.html">Quiz</a>
+        </nav>
+        <a class="button header-cta" href="lessons.html"
+          >Start learning <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero container" id="home">
+        <div class="hero-copy" data-node-id="3:364">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Small steps. Real websites.
+          </p>
+          <h1>
+            Your first website<br />
+            starts with <span class="tag-underline">a tag.</span>
+          </h1>
+          <p class="hero-description">
+            Learn HTML from zero. Write real code, see it come alive, and build
+            a little corner of the internet that is yours.
+          </p>
+          <div class="actions">
+            <a class="button" href="lessons.html"
+              >Start learning — it’s free <span>↗</span></a
+            ><a class="button button-secondary" href="examples.html"
+              >Try the playground</a
+            >
+          </div>
+          <p class="small-note">
+            No experience needed. Just a little curiosity.
+          </p>
+          <button
+            class="motion-toggle text-button"
+            type="button"
+            aria-pressed="false"
+          >
+            Pause animation
+          </button>
+        </div>
+        <div class="hero-visual">
+          <div class="code-window" data-node-id="3:374">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"
+                ><i></i><i></i><i></i></span
+              ><span>index.html</span><span class="file-language">HTML</span>
+            </div>
+            <pre
+              class="hero-code"
+              aria-label="Example HTML code"
+            ><code><span class="syntax">&lt;!DOCTYPE html&gt;</span>
+&lt;html&gt;
+  &lt;body&gt;
+    <span class="syntax">&lt;h1&gt;</span>Hello, world!<span class="syntax">&lt;/h1&gt;</span>
+    &lt;p&gt;I made this.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;<span class="code-cursor" aria-hidden="true"></span></code></pre>
+            <div class="hero-preview">
+              <p class="eyebrow">
+                Live preview <span class="status-dot"></span>
+              </p>
+              <h2>Hello, world!</h2>
+              <p>I made this.</p>
+              <span class="preview-mark" aria-hidden="true">✳</span>
+            </div>
+          </div>
+          <div class="floating-label">
+            <span>✓</span> Your first “I made this” moment.
+          </div>
+        </div>
+      </section>
+      <div class="principles">
+        <div class="container">
+          <span>Learn by doing</span><span aria-hidden="true">↗</span
+          ><span>Make something real</span><span aria-hidden="true">↗</span
+          ><span>One tag at a time</span>
+        </div>
+      </div>
+      <section class="section container" id="lessons">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / Your learning path</p>
+          <h2>A little learning.<br />A lot of possibility.</h2>
+          <p>
+            Six beginner-friendly lessons. One website you can call your own.
+          </p>
+        </div>
+        <div class="lesson-grid">
+          <a class="lesson-card reveal" href="lesson-1.html"
+            ><span class="lesson-symbol">&lt;/&gt;</span
+            ><span class="eyebrow">01 / HTML basics</span>
+            <h3>Your first HTML page</h3>
+            <p>Meet tags, elements and the structure behind every website.</p>
+            <span class="lesson-meta"
+              >8 min <span>Start lesson ↗</span></span
+            ></a
+          >
+          <a class="lesson-card reveal" href="lesson-2.html"
+            ><span class="lesson-symbol">Aa</span
+            ><span class="eyebrow">02 / HTML basics</span>
+            <h3>Text that tells a story</h3>
+            <p>Give your ideas structure with headings and paragraphs.</p>
+            <span class="lesson-meta"
+              >6 min <span>Start lesson ↗</span></span
+            ></a
+          >
+          <a class="lesson-card reveal" href="lesson-3.html"
+            ><span class="lesson-symbol">↗</span
+            ><span class="eyebrow">03 / HTML basics</span>
+            <h3>Connect your world</h3>
+            <p>Add links and images that make your page feel alive.</p>
+            <span class="lesson-meta"
+              >8 min <span>Start lesson ↗</span></span
+            ></a
+          >
+          <a class="lesson-card reveal" href="lesson-4.html"
+            ><span class="lesson-symbol">≡</span
+            ><span class="eyebrow">04 / HTML basics</span>
+            <h3>A little more structure</h3>
+            <p>Organize information with lists and meaningful sections.</p>
+            <span class="lesson-meta"
+              >7 min <span>Start lesson ↗</span></span
+            ></a
+          >
+          <a class="lesson-card reveal" href="lesson-5.html"
+            ><span class="lesson-symbol">[ ]</span
+            ><span class="eyebrow">05 / HTML basics</span>
+            <h3>Make it interactive</h3>
+            <p>Build friendly forms with labels, inputs and buttons.</p>
+            <span class="lesson-meta"
+              >10 min <span>Start lesson ↗</span></span
+            ></a
+          >
+          <a class="lesson-card reveal" href="lesson-6.html"
+            ><span class="lesson-symbol">✓</span
+            ><span class="eyebrow">06 / Your first project</span>
+            <h3>Build your first page</h3>
+            <p>Bring everything together in a tiny personal website.</p>
+            <span class="lesson-meta"
+              >15 min <span>Start lesson ↗</span></span
+            ></a
+          >
+        </div>
+      </section>
+      <section class="section playground" id="examples">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">02 / The playground</p>
+            <h2>Less theory. More “I made this.”</h2>
+            <p>
+              Change a line. Run the code. See the result. That is how it
+              clicks.
+            </p>
+          </div>
+          <div class="playground-grid reveal">
+            <div class="workbench">
+              <div class="window-bar">
+                <span class="window-dots" aria-hidden="true"
+                  ><i></i><i></i><i></i></span
+                ><label for="html-editor">index.html</label
+                ><button class="text-button" id="reset-code" type="button">
+                  Reset
+                </button>
+              </div>
+              <textarea
+                id="html-editor"
+                spellcheck="false"
+                autocapitalize="off"
+                aria-label="Edit your HTML code"
+              >
+&lt;h1&gt;Hello, world!&lt;/h1&gt;
+&lt;p&gt;My first page starts here.&lt;/p&gt;
+&lt;button&gt;Let’s build&lt;/button&gt;</textarea>
+              <div class="preview-shell">
+                <span class="eyebrow">Live preview</span
+                ><iframe
+                  id="code-preview"
+                  title="Your HTML result"
+                  sandbox=""
+                  referrerpolicy="no-referrer"
+                ></iframe>
+              </div>
+            </div>
+            <div class="playground-guide">
+              <h3>Your first experiment</h3>
+              <ol>
+                <li>Change the heading</li>
+                <li>Add a sentence about yourself</li>
+                <li>Run your code</li>
+              </ol>
+              <button class="button" id="run-code" type="button">
+                Run code <span>→</span>
+              </button>
+              <p class="small-note">Instant preview. No setup required.</p>
+              <p class="run-status" id="run-status" role="status"></p>
+              <div class="example-presets" aria-label="Example presets">
+                <p class="eyebrow">Try another example</p>
+                <button type="button" data-preset="links">Links ↗</button
+                ><button type="button" data-preset="lists">Lists ≡</button
+                ><button type="button" data-preset="form">Forms [ ]</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section practice" id="practice">
+        <div class="container reveal">
+          <p class="eyebrow">03 / Put it into practice</p>
+          <h2>Make a page that feels like you.</h2>
+          <p>
+            Your mission: a heading with your name, a short introduction and a
+            link to something you love.
+          </p>
+          <div class="challenge-checks">
+            <span id="check-heading">01 &nbsp; Add a heading</span
+            ><span id="check-paragraph">02 &nbsp; Write a paragraph</span
+            ><span id="check-link">03 &nbsp; Include a link</span>
+          </div>
+          <div class="actions">
+            <a class="button" href="practice.html"
+              >Take the challenge <span>↗</span></a
+            ><a class="button button-secondary" href="practice.html#workspace"
+              >Open practice editor →</a
+            >
+          </div>
+          <p id="challenge-status" role="status"></p>
+        </div>
+      </section>
+      <section class="section container quiz-section" id="quiz">
+        <div class="quiz-intro reveal">
+          <p class="eyebrow">04 / A little check-in</p>
+          <h2>You know more<br />than you think.</h2>
+          <p>
+            Five quick questions. No pressure. Just a chance to see what stuck.
+          </p>
+          <span class="eyebrow quiz-caption"
+            >5 questions · Instant feedback</span
+          ><a class="text-link-page" href="quiz.html">Open the full quiz →</a>
+        </div>
+        <div class="quiz-card reveal">
+          <div class="quiz-progress" aria-hidden="true">
+            <span id="quiz-progress-bar"></span>
+          </div>
+          <p class="eyebrow" id="quiz-counter">Question 01 / 05</p>
+          <h3 id="quiz-question">Which tag creates a paragraph?</h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" role="status">
+            Choose an answer to check your understanding.
+          </p>
+          <button class="button" id="quiz-next" type="button" hidden>
+            Next question →
+          </button>
+        </div>
+      </section>
+      <section class="section container faq" id="faq">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Good questions</p>
+          <h2>Before your first tag.</h2>
+        </div>
+        <div class="reveal">
+          <details open>
+            <summary>Do I need any coding experience?</summary>
+            <p>
+              No. Start with the first lesson and learn one concept at a time.
+              Each lesson includes an example you can open in the playground.
+            </p>
+          </details>
+          <details>
+            <summary>What do I need to get started?</summary>
+            <p>
+              A browser and a little curiosity. The playground is ready when you
+              are. Later, you can write HTML in any text editor and open the
+              file in your browser.
+            </p>
+          </details>
+          <details>
+            <summary>What will I be able to build?</summary>
+            <p>
+              A simple personal page with text, links, images and a clear
+              structure. HTML gives your page meaning; CSS controls how it
+              looks.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="section final-cta">
+        <div class="container reveal">
+          <p class="eyebrow">Every website starts somewhere.</p>
+          <h2>This one starts with you.</h2>
+          <a class="button button-secondary" href="lessons.html"
+            >Write your first tag <span>↗</span></a
+          ><span class="cta-symbol" aria-hidden="true">&lt;/&gt;</span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">&lt;/&gt; taglab</a>
+          <p>A small start. A whole new skill.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a><a href="lessons.html">Lessons</a
+          ><a href="examples.html">Examples</a
+          ><a href="practice.html">Practice</a><a href="quiz.html">Quiz</a>
+        </nav>
+        <div class="footer-note">
+          <p>Made for curious minds.</p>
+          <details class="keyboard-help">
+            <summary>Keyboard shortcuts</summary>
+            <p>
+              <kbd>Tab</kbd> moves between controls. <kbd>Enter</kbd> opens a
+              link or activates a button. <kbd>Alt</kbd> + <kbd>1–5</kbd> opens
+              Home, Lessons, Examples, Practice or Quiz. In the editor,
+              <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Enter</kbd> runs your code.
+              <kbd>Esc</kbd> closes the mobile menu.
+            </p>
+          </details>
+        </div>
+      </div>
+    </footer>
+    <p
+      class="storage-notice container"
+      id="storage-notice"
+      role="status"
+      hidden
+    ></p>
+    <noscript
+      ><p class="container noscript-note">
+        Page navigation and lessons work without JavaScript. Enable JavaScript
+        for code previews, practice checks and quiz scoring.
+      </p></noscript
+    >
+  </body>
+</html>

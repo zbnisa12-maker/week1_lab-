@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn HTML from zero. Simple lessons, live examples, practice challenges and a quick quiz."
+    />
+    <title>Build your first page — TagLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="lessons">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container navigation">
+        <a class="brand" href="index.html" aria-label="TagLab home"
+          >&lt;/&gt; taglab</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a
+          ><a href="lessons.html" aria-current="page">Lessons</a
+          ><a href="examples.html">Examples</a
+          ><a href="practice.html">Practice</a><a href="quiz.html">Quiz</a>
+        </nav>
+        <a class="button header-cta" href="lessons.html"
+          >Start learning <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <section class="container lesson-layout">
+        <aside class="lesson-sidebar">
+          <a class="eyebrow" href="lessons.html">← All HTML lessons</a>
+          <nav aria-label="Lesson navigation">
+            <a href="lesson-1.html"
+              ><span>01</span>Your first HTML page<small
+                data-lesson-status="1"
+              ></small></a
+            ><a href="lesson-2.html"
+              ><span>02</span>Text that tells a story<small
+                data-lesson-status="2"
+              ></small></a
+            ><a href="lesson-3.html"
+              ><span>03</span>Connect your world<small
+                data-lesson-status="3"
+              ></small></a
+            ><a href="lesson-4.html"
+              ><span>04</span>A little more structure<small
+                data-lesson-status="4"
+              ></small></a
+            ><a href="lesson-5.html"
+              ><span>05</span>Make it interactive<small
+                data-lesson-status="5"
+              ></small></a
+            ><a href="lesson-6.html" aria-current="page"
+              ><span>06</span>Build your first page<small
+                data-lesson-status="6"
+              ></small
+            ></a>
+          </nav>
+        </aside>
+        <article class="lesson-article">
+          <p class="eyebrow">Lesson 06 / 06 · 15 min</p>
+          <h1>Build your first page</h1>
+          <div class="lesson-reading">
+            <p>
+              Combine what you know: a main heading, an introduction, a list of
+              interests and a useful link. Keep the structure clear and the text
+              your own.
+            </p>
+            <p>
+              When you are ready to work outside the playground, save an HTML
+              document as index.html and open it in your browser. Add a CSS file
+              to customize the colors, spacing and layout.
+            </p>
+          </div>
+          <div class="lesson-example">
+            <div class="window-bar">
+              <span>Example / index.html</span
+              ><button
+                class="text-button"
+                type="button"
+                data-copy-source="lesson-source"
+              >
+                Copy code
+              </button>
+            </div>
+            <pre><code id="lesson-source">&lt;main&gt;
+  &lt;h1&gt;Hi, I’m Alex.&lt;/h1&gt;
+  &lt;p&gt;I am learning to build for the web.&lt;/p&gt;
+  &lt;h2&gt;Things I love&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Music&lt;/li&gt;
+    &lt;li&gt;Exploring new places&lt;/li&gt;
+    &lt;li&gt;Making things&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;a href=&quot;https://developer.mozilla.org/&quot;&gt;My learning resource&lt;/a&gt;
+&lt;/main&gt;</code></pre>
+          </div>
+          <p class="copy-status" role="status"></p>
+          <div class="actions">
+            <a class="button" href="examples.html?lesson=6"
+              >Try this example ↗</a
+            ><button
+              class="button button-secondary"
+              type="button"
+              data-complete-lesson="6"
+              aria-pressed="false"
+            >
+              Mark as complete ✓
+            </button>
+          </div>
+          <p id="completion-status" role="status"></p>
+          <div class="remember">
+            <p class="eyebrow">Try it yourself</p>
+            <p>
+              Change the example to say something about you. Run your version in
+              the playground and compare the result.
+            </p>
+          </div>
+          <nav class="lesson-pagination" aria-label="Previous and next lesson">
+            <a class="button button-secondary" href="lesson-5.html"
+              >← Previous lesson</a
+            ><a class="button" href="practice.html">Start practicing ↗</a>
+          </nav>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">&lt;/&gt; taglab</a>
+          <p>A small start. A whole new skill.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a><a href="lessons.html">Lessons</a
+          ><a href="examples.html">Examples</a
+          ><a href="practice.html">Practice</a><a href="quiz.html">Quiz</a>
+        </nav>
+        <div class="footer-note">
+          <p>Made for curious minds.</p>
+          <details class="keyboard-help">
+            <summary>Keyboard shortcuts</summary>
+            <p>
+              <kbd>Tab</kbd> moves between controls. <kbd>Enter</kbd> opens a
+              link or activates a button. <kbd>Alt</kbd> + <kbd>1–5</kbd> opens
+              Home, Lessons, Examples, Practice or Quiz. In the editor,
+              <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Enter</kbd> runs your code.
+              <kbd>Esc</kbd> closes the mobile menu.
+            </p>
+          </details>
+        </div>
+      </div>
+    </footer>
+    <p
+      class="storage-notice container"
+      id="storage-notice"
+      role="status"
+      hidden
+    ></p>
+    <noscript
+      ><p class="container noscript-note">
+        Page navigation and lessons work without JavaScript. Enable JavaScript
+        for code previews, practice checks and quiz scoring.
+      </p></noscript
+    >
+  </body>
+</html>

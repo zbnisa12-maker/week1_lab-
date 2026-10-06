@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn HTML from zero. Simple lessons, live examples, practice challenges and a quick quiz."
+    />
+    <title>Practice HTML — TagLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="practice">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container navigation">
+        <a class="brand" href="index.html" aria-label="TagLab home"
+          >&lt;/&gt; taglab</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="lessons.html">Lessons</a
+          ><a href="examples.html">Examples</a
+          ><a href="practice.html" aria-current="page">Practice</a
+          ><a href="quiz.html">Quiz</a>
+        </nav>
+        <a class="button header-cta" href="lessons.html"
+          >Start learning <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <section class="section practice">
+        <div class="container">
+          <div class="page-heading">
+            <p class="eyebrow">03 / Put it into practice</p>
+            <h1>Small challenges.<br />Real progress.</h1>
+            <p>
+              Build a little something with every challenge. Get feedback, use a
+              hint when you need one, and keep experimenting.
+            </p>
+          </div>
+          <div class="challenge-grid">
+            <a
+              class="challenge-picker"
+              href="practice.html?challenge=intro"
+              data-challenge-link="intro"
+              ><span class="eyebrow">01 / Getting started</span>
+              <h3>Introduce yourself</h3>
+              <span data-challenge-status="intro">Try challenge ↗</span></a
+            ><a
+              class="challenge-picker"
+              href="practice.html?challenge=links"
+              data-challenge-link="links"
+              ><span class="eyebrow">02 / Make connections</span>
+              <h3>Share your favorites</h3>
+              <span data-challenge-status="links">Try challenge ↗</span></a
+            ><a
+              class="challenge-picker"
+              href="practice.html?challenge=list"
+              data-challenge-link="list"
+              ><span class="eyebrow">03 / Add structure</span>
+              <h3>Make a tiny plan</h3>
+              <span data-challenge-status="list">Try challenge ↗</span></a
+            ><a
+              class="challenge-picker"
+              href="practice.html?challenge=form"
+              data-challenge-link="form"
+              ><span class="eyebrow">04 / Meet your visitor</span>
+              <h3>Build a friendly form</h3>
+              <span data-challenge-status="form">Try challenge ↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section container" id="workspace">
+        <div class="workspace-title">
+          <p class="eyebrow" id="challenge-level">01 / Getting started</p>
+          <h2 id="challenge-title">Introduce yourself</h2>
+          <p id="challenge-description">
+            Make your first personal introduction with a main heading and a
+            paragraph.
+          </p>
+        </div>
+        <div class="editor-layout practice-editor">
+          <div class="workbench">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"
+                ><i></i><i></i><i></i></span
+              ><label for="html-editor">index.html</label
+              ><button class="text-button" id="reset-code" type="button">
+                Reset
+              </button>
+            </div>
+            <textarea
+              id="html-editor"
+              spellcheck="false"
+              autocapitalize="off"
+              aria-label="Edit HTML code"
+            >
+&lt;h1&gt;Hello, world!&lt;/h1&gt;
+&lt;p&gt;My first page starts here.&lt;/p&gt;</textarea>
+            <div class="editor-tools">
+              <button class="button" id="run-code" type="button">
+                Run code →</button
+              ><button
+                class="button button-secondary"
+                id="copy-code"
+                type="button"
+              >
+                Copy</button
+              ><button
+                class="button button-secondary"
+                id="download-code"
+                type="button"
+              >
+                Download HTML</button
+              ><label class="live-toggle"
+                ><input type="checkbox" id="auto-preview" checked /> Live
+                preview</label
+              >
+            </div>
+            <p class="run-status" id="run-status" role="status"></p>
+            <div class="preview-shell">
+              <p class="eyebrow">Your result</p>
+              <iframe
+                id="code-preview"
+                title="Your HTML result"
+                sandbox=""
+                referrerpolicy="no-referrer"
+              ></iframe>
+            </div>
+          </div>
+          <aside class="editor-aside challenge-aside">
+            <h3>Your checklist</h3>
+            <ul class="validation-list" id="challenge-checks"></ul>
+            <button class="button" id="check-challenge" type="button">
+              Check my code ✓
+            </button>
+            <p id="challenge-status" role="status">
+              Complete the checklist, then check your code.
+            </p>
+            <details class="hint-box">
+              <summary>Need a hint?</summary>
+              <p id="challenge-hint"></p>
+            </details>
+            <details class="hint-box">
+              <summary>Show an example solution</summary>
+              <pre><code id="challenge-solution"></code></pre>
+            </details>
+            <a
+              class="text-link-page"
+              id="next-challenge"
+              href="practice.html?challenge=links"
+              >Next challenge →</a
+            >
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">&lt;/&gt; taglab</a>
+          <p>A small start. A whole new skill.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a><a href="lessons.html">Lessons</a
+          ><a href="examples.html">Examples</a
+          ><a href="practice.html">Practice</a><a href="quiz.html">Quiz</a>
+        </nav>
+        <div class="footer-note">
+          <p>Made for curious minds.</p>
+          <details class="keyboard-help">
+            <summary>Keyboard shortcuts</summary>
+            <p>
+              <kbd>Tab</kbd> moves between controls. <kbd>Enter</kbd> opens a
+              link or activates a button. <kbd>Alt</kbd> + <kbd>1–5</kbd> opens
+              Home, Lessons, Examples, Practice or Quiz. In the editor,
+              <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Enter</kbd> runs your code.
+              <kbd>Esc</kbd> closes the mobile menu.
+            </p>
+          </details>
+        </div>
+      </div>
+    </footer>
+    <p
+      class="storage-notice container"
+      id="storage-notice"
+      role="status"
+      hidden
+    ></p>
+    <noscript
+      ><p class="container noscript-note">
+        Page navigation and lessons work without JavaScript. Enable JavaScript
+        for code previews, practice checks and quiz scoring.
+      </p></noscript
+    >
+  </body>
+</html>

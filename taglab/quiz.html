@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn HTML from zero. Simple lessons, live examples, practice challenges and a quick quiz."
+    />
+    <title>HTML quiz — TagLab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="quiz">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container navigation">
+        <a class="brand" href="index.html" aria-label="TagLab home"
+          >&lt;/&gt; taglab</a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="lessons.html">Lessons</a
+          ><a href="examples.html">Examples</a
+          ><a href="practice.html">Practice</a
+          ><a href="quiz.html" aria-current="page">Quiz</a>
+        </nav>
+        <a class="button header-cta" href="lessons.html"
+          >Start learning <span>↗</span></a
+        >
+      </div>
+    </header>
+    <main id="main">
+      <section class="section container quiz-section" id="quiz">
+        <div class="quiz-intro reveal">
+          <p class="eyebrow">04 / A little check-in</p>
+          <h1>You know more<br />than you think.</h1>
+          <p>
+            Five quick questions. No pressure. Just a chance to see what stuck.
+          </p>
+          <p id="best-score" class="best-score"></p>
+          <span class="eyebrow quiz-caption"
+            >5 questions · Instant feedback</span
+          >
+        </div>
+        <div class="quiz-card reveal">
+          <div class="quiz-progress" aria-hidden="true">
+            <span id="quiz-progress-bar"></span>
+          </div>
+          <p class="eyebrow" id="quiz-counter">Question 01 / 05</p>
+          <h2 id="quiz-question">Which tag creates a paragraph?</h2>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" role="status">
+            Choose an answer to check your understanding.
+          </p>
+          <button class="button" id="quiz-next" type="button" hidden>
+            Next question →
+          </button>
+          <div id="quiz-review" hidden></div>
+          <a class="text-link-page" href="lessons.html">Review the lessons →</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">&lt;/&gt; taglab</a>
+          <p>A small start. A whole new skill.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="index.html">Home</a><a href="lessons.html">Lessons</a
+          ><a href="examples.html">Examples</a
+          ><a href="practice.html">Practice</a><a href="quiz.html">Quiz</a>
+        </nav>
+        <div class="footer-note">
+          <p>Made for curious minds.</p>
+          <details class="keyboard-help">
+            <summary>Keyboard shortcuts</summary>
+            <p>
+              <kbd>Tab</kbd> moves between controls. <kbd>Enter</kbd> opens a
+              link or activates a button. <kbd>Alt</kbd> + <kbd>1–5</kbd> opens
+              Home, Lessons, Examples, Practice or Quiz. In the editor,
+              <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Enter</kbd> runs your code.
+              <kbd>Esc</kbd> closes the mobile menu.
+            </p>
+          </details>
+        </div>
+      </div>
+    </footer>
+    <p
+      class="storage-notice container"
+      id="storage-notice"
+      role="status"
+      hidden
+    ></p>
+    <noscript
+      ><p class="container noscript-note">
+        Page navigation and lessons work without JavaScript. Enable JavaScript
+        for code previews, practice checks and quiz scoring.
+      </p></noscript
+    >
+  </body>
+</html>
