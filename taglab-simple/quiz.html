@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | TagLab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">&lt;/&gt; TagLab</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="examples.html">Examples</a>
+      <a href="practice.html">Practice</a>
+      <a href="quiz.html" aria-current="page">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>A quick HTML quiz</h1>
+    <p>Choose one answer for each question. You can check your score and try again.</p>
+    <form id="quiz-form">
+      <fieldset>
+        <legend>1. Which tag creates a paragraph?</legend>
+        <label class="option"><input type="radio" name="q1" value="h1" required> <code>h1</code></label>
+        <label class="option"><input type="radio" name="q1" value="p" required> <code>p</code></label>
+        <label class="option"><input type="radio" name="q1" value="img" required> <code>img</code></label>
+        <p class="feedback" id="quiz-feedback-1"></p>
+      </fieldset>
+      <fieldset>
+        <legend>2. Which attribute sets a link destination?</legend>
+        <label class="option"><input type="radio" name="q2" value="src" required> <code>src</code></label>
+        <label class="option"><input type="radio" name="q2" value="alt" required> <code>alt</code></label>
+        <label class="option"><input type="radio" name="q2" value="href" required> <code>href</code></label>
+        <p class="feedback" id="quiz-feedback-2"></p>
+      </fieldset>
+      <fieldset>
+        <legend>3. Where does visible page content belong?</legend>
+        <label class="option"><input type="radio" name="q3" value="head" required> <code>head</code></label>
+        <label class="option"><input type="radio" name="q3" value="body" required> <code>body</code></label>
+        <label class="option"><input type="radio" name="q3" value="title" required> <code>title</code></label>
+        <p class="feedback" id="quiz-feedback-3"></p>
+      </fieldset>
+      <fieldset>
+        <legend>4. Which tag creates a list item?</legend>
+        <label class="option"><input type="radio" name="q4" value="li" required> <code>li</code></label>
+        <label class="option"><input type="radio" name="q4" value="ul" required> <code>ul</code></label>
+        <label class="option"><input type="radio" name="q4" value="ol" required> <code>ol</code></label>
+        <p class="feedback" id="quiz-feedback-4"></p>
+      </fieldset>
+      <fieldset>
+        <legend>5. Which attribute gives an image a text alternative?</legend>
+        <label class="option"><input type="radio" name="q5" value="href" required> <code>href</code></label>
+        <label class="option"><input type="radio" name="q5" value="src" required> <code>src</code></label>
+        <label class="option"><input type="radio" name="q5" value="alt" required> <code>alt</code></label>
+        <p class="feedback" id="quiz-feedback-5"></p>
+      </fieldset>
+      <button type="submit">Check my score</button>
+      <button class="secondary" type="reset">Try again</button>
+      <p id="quiz-result" class="result" role="status"></p>
+    </form>
+    <p>Need a reminder? <a href="lessons.html">Go back to the lessons.</a></p>
+  </main>
+
+  <footer>
+    <p>TagLab · Learn HTML, one step at a time.</p>
+    <a href="index.html">Back to home</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice | TagLab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">&lt;/&gt; TagLab</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="examples.html">Examples</a>
+      <a href="practice.html" aria-current="page">Practice</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Your turn</h1>
+    <p>Fill in each blank. Write only the missing tag name or attribute, for example <code>p</code>. Then check your answers.</p>
+
+    <form id="practice-form">
+      <section class="card">
+        <h2>1. Add a main heading</h2>
+        <pre><code>&lt;___&gt;Welcome to my website&lt;/___&gt;</code></pre>
+        <label for="answer-1">Which tag goes in both blanks?</label>
+        <input id="answer-1" type="text" required autocomplete="off" spellcheck="false" aria-describedby="feedback-1">
+        <p class="feedback" id="feedback-1"></p>
+      </section>
+      <section class="card">
+        <h2>2. Complete a link</h2>
+        <pre><code>&lt;a ___="lessons.html"&gt;Read the lessons&lt;/a&gt;</code></pre>
+        <label for="answer-2">Which attribute sets the destination?</label>
+        <input id="answer-2" type="text" required autocomplete="off" spellcheck="false" aria-describedby="feedback-2">
+        <p class="feedback" id="feedback-2"></p>
+      </section>
+      <section class="card">
+        <h2>3. Add a list item</h2>
+        <pre><code>&lt;ul&gt;
+  &lt;___&gt;Learn HTML&lt;/___&gt;
+&lt;/ul&gt;</code></pre>
+        <label for="answer-3">Which tag goes in both blanks?</label>
+        <input id="answer-3" type="text" required autocomplete="off" spellcheck="false" aria-describedby="feedback-3">
+        <p class="feedback" id="feedback-3"></p>
+      </section>
+      <button type="submit">Check answers</button>
+      <button class="secondary" type="reset">Try again</button>
+      <p id="practice-result" class="result" role="status"></p>
+    </form>
+
+    <details class="note">
+      <summary>Show the answers and explanations</summary>
+      <p>1. <code>h1</code> is the main heading.</p>
+      <p>2. <code>href</code> gives a link its destination.</p>
+      <p>3. <code>li</code> is one item inside a list.</p>
+    </details>
+    <a href="quiz.html">Ready? Try the quiz →</a>
+  </main>
+
+  <footer>
+    <p>TagLab · Learn HTML, one step at a time.</p>
+    <a href="index.html">Back to home</a>
+  </footer>
+</body>
+</html>

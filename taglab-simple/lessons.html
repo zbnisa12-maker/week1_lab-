@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessons | TagLab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">&lt;/&gt; TagLab</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="lessons.html" aria-current="page">Lessons</a>
+      <a href="examples.html">Examples</a>
+      <a href="practice.html">Practice</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>HTML lessons</h1>
+    <p>Start here. Each section introduces a small part of a web page.</p>
+    <nav class="topics" aria-label="Lesson topics">
+      <a href="#structure">Structure</a>
+      <a href="#text">Text</a>
+      <a href="#links">Links and images</a>
+      <a href="#lists">Lists</a>
+      <a href="#forms">Forms</a>
+    </nav>
+
+    <section class="card" id="structure">
+      <h2>1. Page structure</h2>
+      <p>An HTML file is a text file saved with the <code>.html</code> extension. The browser reads it and displays a page.</p>
+      <p>The <code>head</code> contains information such as the page title. The <code>body</code> contains the content visitors see.</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello!&lt;/h1&gt;
+    &lt;p&gt;Welcome to my page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <p>Most elements have an opening tag, content and a closing tag: <code>&lt;p&gt;Hello&lt;/p&gt;</code>.</p>
+    </section>
+
+    <section class="card" id="text">
+      <h2>2. Headings and paragraphs</h2>
+      <p>Use <code>h1</code> for the main heading and <code>h2</code> for a section heading. A <code>p</code> element is a paragraph. Use headings in a logical order.</p>
+      <pre><code>&lt;h1&gt;About me&lt;/h1&gt;
+&lt;h2&gt;My hobbies&lt;/h2&gt;
+&lt;p&gt;I enjoy music and drawing.&lt;/p&gt;</code></pre>
+      <p>Use <code>strong</code> for important text and <code>em</code> for emphasis.</p>
+    </section>
+
+    <section class="card" id="links">
+      <h2>3. Links and images</h2>
+      <p>The <code>a</code> tag creates a link. Its <code>href</code> attribute says where the link goes.</p>
+      <pre><code>&lt;a href="examples.html"&gt;See examples&lt;/a&gt;</code></pre>
+      <p>An image uses <code>img</code>. The <code>src</code> attribute gives the file location, and <code>alt</code> provides a text alternative.</p>
+      <pre><code>&lt;img src="cat.jpg" alt="A cat sleeping on a sofa"&gt;</code></pre>
+      <p>For this example, put your own <code>cat.jpg</code> in the same folder. The <code>img</code> element has no closing tag.</p>
+    </section>
+
+    <section class="card" id="lists">
+      <h2>4. Lists</h2>
+      <p>Use <code>ul</code> for a bullet list or <code>ol</code> for a numbered list. Put each item inside an <code>li</code> element.</p>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;Read a lesson&lt;/li&gt;
+  &lt;li&gt;Try an example&lt;/li&gt;
+  &lt;li&gt;Take the quiz&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </section>
+
+    <section class="card" id="forms">
+      <h2>5. Forms</h2>
+      <p>A form groups input controls. A label tells the user what to enter. Its <code>for</code> value should match the input's <code>id</code>.</p>
+      <pre><code>&lt;form&gt;
+  &lt;label for="name"&gt;Your name&lt;/label&gt;
+  &lt;input id="name" type="text"&gt;
+  &lt;button type="button"&gt;Say hello&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+      <p>This HTML creates the controls. Making the button do something needs JavaScript or a form destination.</p>
+    </section>
+    <a class="button" href="examples.html">Next: examples →</a>
+  </main>
+
+  <footer>
+    <p>TagLab · Learn HTML, one step at a time.</p>
+    <a href="index.html">Back to home</a>
+  </footer>
+</body>
+</html>
